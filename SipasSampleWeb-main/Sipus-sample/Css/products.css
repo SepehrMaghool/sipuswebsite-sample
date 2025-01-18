@@ -1,0 +1,146 @@
+@import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
+.card{
+  font-size: 12px;
+}
+.main-price{
+  font-size: 18px;
+  color: var(--dark-red-color);
+}
+.left-to-right {
+  position: absolute;
+  left: 0.3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  width: 33px;
+  height:33px;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.first-icon {
+  top: 35%;
+  transition: left 0.2s ease-in, visibility 0.19s ease-in;
+ 
+}
+.second-icon {
+  top: 46%;
+  transition: left 0.3s ease-in, visibility 0.29s ease-in;
+
+}
+.third-icon {
+  top: 57%;
+  transition: left 0.4s ease-in, visibility 0.39s ease-in;
+}
+
+.card:hover > .first-icon {
+left: 3em;
+visibility: visible;
+ }
+.card:hover > .second-icon {
+  left: 3em;
+  visibility: visible;
+;
+}
+.card:hover > .third-icon {
+  left: 3em;
+  visibility: visible;
+;
+}
+.left-to-right:hover {
+  background-color: rgb(255, 94, 2);
+  transition: 0.5s ease-out;
+}
+.card-footer,
+.card-header {
+  border: 0;
+}
+.card {
+  border-radius: 0;
+  border: 0;
+  border-left:1px solid rgba(204, 204, 204, 0.484);
+}
+.img-card{
+  width: 200px;
+  height: 200px;
+}
+
+.products .col-2:nth-child(n+7):nth-child(-n+12) .card {
+border-top: 1px solid rgba(204, 204, 204, 0.484);
+}
+
+.discount{
+    left: 30px;
+    top: 30px;
+    z-index: 99;
+    border-radius: 50%;
+    font-size: 16px;
+    width:  35px;
+    height: 35px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-shadow:1px 0px 6px #fff;
+}
+
+.more-link-card{
+  height: auto;
+}
+.more-link {
+  color: var(--blue-btn-color);
+}
+.more-link:hover{
+color: var(--red-color);
+}
+.figure {
+  position: relative;
+}
+.figure img.img-product.img-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+.figure:hover img.img-product.img-hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .card{
+    width: 80px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width:769px) {
+
+  .swiper-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+  }
+  .swiper-slide:first-child  {
+    border-right: 0;
+  }
+  .swiper-slide:nth-child(6)  {
+    border-left: 0;
+  }
+  .swiper-slide:nth-child(12)  {
+    border-left: 0;
+  }
+}

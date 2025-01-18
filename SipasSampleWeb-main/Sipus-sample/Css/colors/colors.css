@@ -1,0 +1,39 @@
+:root {
+  /* hover colors */
+  --quick-link: #d3ac67;
+  --red-nav-item: #f23d4a;
+  --menu-item-color:#f68121;
+  --red-btn-color:var(--dark-red-color);
+  /* icon colors */
+  --star-color: #fec42d;
+  --animate-icon-color:#777;
+  --shopping-color:#efefef;
+  /* bootstrap colors */
+  --warning-color: #f58220;
+  --danger-color: #d9534f;
+  /* text color */
+  --dark-red-color: #ff3000;
+  --red-color:#ef394e;
+  --dark-color: #333;
+  --grey-color: #7a7a73;
+  --white-color: #fff;
+  --nav-link-color:#474747;
+  /* background colors */
+  --footer-color:#d6ae69;
+  /* btn text color */
+  --light-btn-color:#607d8b;
+  --blue-btn-color:#38c7dd;
+  --border-color:#ced4da;
+  --secondary-menu-color:#4d4d4d;
+  /* background-color: ; */
+  --body-color:#fafafa;
+  /* footer colors */
+  --light-brown:#d3ac67;
+  /* chat icon colors */
+  --chat-color:rgb(166,129,12);
+}
+/* 
+navbar link hover are bootstrap :link-warning
+slider button color is bootstrap:link-warning
+red text color is bootstrap:text-danger
+ */

@@ -1,0 +1,37 @@
+@import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
+.description{
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+}
+.desc-caption{
+    font-size: 12px;
+    color: #000;
+    transition: color 0.2s ease;
+    font-weight: bold;
+}
+.desc-caption:hover{
+    color: var(--quick-link);
+}
+.desc-img{
+width: 70px;
+height: 70px;
+}
+.desc-card{
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 1px rgb(213, 213, 213);
+    border-radius: 30px;
+    width:  16.66%;
+    text-align: center;
+    font-size: 12px;
+    white-space:nowrap;
+
+}
+
+@media screen and (max-width:900px) {
+    .desc-card{
+        white-space: wrap;
+    }
+}
+

@@ -1,0 +1,35 @@
+@import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    left:60px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(51, 51, 51, 0.749);
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, visibility 0.3s ease, transform 0.3s ease,background-color 0.3s ease-in; 
+}
+.scroll-top-btn:hover{
+    background-color: var(--menu-item-color);
+}
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Move the button into view */
+}
+
+.scroll-top-btn.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px); /* Move the button out of view */
+}

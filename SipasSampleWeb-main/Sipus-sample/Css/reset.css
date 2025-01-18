@@ -1,0 +1,90 @@
+@import url(../Css/variables.css);
+@import url(../Css/colors/colors.css);
+/* respnsives are at the end of file */
+@font-face {
+    font-family: 'IranSans';
+    src: url('../font/FontsFree-Net-ir_sans.ttf');
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 4px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+body {
+    direction: rtl; 
+    text-align: right; 
+    border: none;
+    font-family: 'IranSans', sans-serif;
+    background-color: var(--body-color);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.navbar {
+    direction: rtl; 
+    text-align: right; 
+}
+
+.navbar-nav {
+    float: right; 
+    list-style-type: none;
+    display: inline-block; 
+
+}
+
+.navbar-nav > li {
+    float: right; 
+
+}
+
+.nav-link {
+    text-align: right; 
+    display: block; 
+}
+input::placeholder{
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--grey-color);
+} .form-control:focus{
+    outline: none; 
+    box-shadow: none; 
+    border-color: var(--border-color); 
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1420px;
+    overflow-x: hidden;
+}
+@media screen and (min-width:992px) {
+    body{
+        border-top: 1px solid var(--dark-red-color);
+    }
+}
